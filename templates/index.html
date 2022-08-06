@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>Beranda</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+        <h2>{% block title %}Halaman Beranda{% endblock %}</h2>
+        <h5>Ini adalah halaman beranda</h5>
+        <br>Web Buku Tamu yang sudah terhubung dengan databaase MySQL</br>
+        <p id="demo"></p>
+ 
+    {% endblock %}
+</body>
+</html>
